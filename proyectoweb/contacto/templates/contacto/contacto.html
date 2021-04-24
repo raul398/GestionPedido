@@ -1,11 +1,14 @@
-{% extends "proyectowebapp/base.html" %}
+{% extends "home/base.html" %}
 
 {% load static %}
 
 {% block content %}
     <div class="container my-2">
         <div class="row">
+
             <form action="" method="POST" class="text-center">
+                <!-- Es necesario poner el token para evotar 
+                problemas de eguridad-->
                 {% csrf_token %}
                 <table class="text-white">
                     {{miFormulario.as_table}}
@@ -14,5 +17,4 @@
             </form>
         </div>
     </div>
-
 {% endblock %}

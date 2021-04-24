@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'proyectowebapp',
+    'home',
     'servicios',
     'contacto',
     'blog',
@@ -128,3 +128,14 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR/ 'media'
+
+
+#Configuracion de correo electronico para enviar 
+#todo lo que se envie desde el formulario
+
+EMAIL_BACKEND="django.core.email.backends.smtp.EmailBackend"
+EMAIL_HOST="amtp.gmail.com"
+EMAIL_USE_TLS= True
+EMAIL_PORT= 587
+EMAIL_HOST_USER="raul.arganarazestay"
+EMAIL_HOST_PASSWORD=""

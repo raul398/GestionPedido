@@ -4,10 +4,10 @@ from django.shortcuts import render, HttpResponse
 
 def home(request):
 
-    return render(request, 'proyectowebapp/home.html')
+    return render(request, 'home/home.html')
 
 
 def tienda(request):
 
-    return render(request, 'proyectowebapp/tienda.html')
+    return render(request, 'home/tienda.html')
 
