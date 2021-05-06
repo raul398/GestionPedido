@@ -1,6 +1,6 @@
 #Creamos la clase de webcart que maneja la sesion
 
-class webcart:
+class WebCart:
     #Constructor que iniciara las tareas mas importantes
     def __init__(self, request):
         #Almacenar la peticion actual para utilizarla mas adelante
